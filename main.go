@@ -15,7 +15,7 @@ func main() {
 		})
 	})
 
-	err := r.Run("localhost:8090") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	err := r.Run("0.0.0.0:8090") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 	if err != nil {
 		log.Println(err)
 		return
